@@ -1,0 +1,34 @@
+{
+  "name": "antd-mobile-web",
+  "version": "1.0.0",
+  "description": "基于 React 的移动设计规范实现，Web 精简版。",
+  "homepage": "http://mobile.ant.design",
+  "keywords": [
+    "ant",
+    "design",
+    "react",
+    "react-component",
+    "component",
+    "components",
+    "ui",
+    "framework",
+    "frontend"
+  ],
+  "main": "lib/warn.js",
+  "repository": "https://github.com/cncolder/ant-design-mobile",
+  "author": "colder",
+  "license": "MIT",
+  "files": [
+    "lib"
+  ],
+  "dependencies": {
+    "antd-mobile": "1.0.0"
+  },
+  "devDependencies": {
+    "fs-extra": "^2.0.0",
+    "glob": "^7.1.1"
+  },
+  "scripts": {
+    "build": "node ./build.js"
+  }
+}
