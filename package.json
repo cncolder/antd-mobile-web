@@ -1,6 +1,6 @@
 {
   "name": "antd-mobile-web",
-  "version": "1.0.0",
+  "version": "1.0.0-beta.1",
   "description": "基于 React 的移动设计规范实现，Web 精简版。",
   "homepage": "http://mobile.ant.design",
   "keywords": [
@@ -30,6 +30,7 @@
   },
   "scripts": {
     "build": "node ./build.js",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "release": "yarn version --no-git-tag-version && EDITOR=vim git release `node -e \"console.log(require('./package').version)\"` -c"
   }
 }
