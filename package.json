@@ -15,7 +15,7 @@
     "frontend"
   ],
   "main": "lib/warn.js",
-  "repository": "https://github.com/cncolder/ant-design-mobile",
+  "repository": "https://github.com/cncolder/antd-mobile-web",
   "author": "colder",
   "license": "MIT",
   "files": [

@@ -32,26 +32,16 @@ import { Button } from 'antd-mobile-web'
 
 # About SSR
 
-Since webpack package your code for client only. On server side. `style-loader` cannot work.
-
-I suggest you remove `"style": "css"` from '.babelrc'. Put css in your html page head.
-
-```html
-<html>
-    <head>
-        <link rel='stylesheet' type='text/css' href='//unpkg.com/antd-mobile/dist/antd-mobile.min.css' />
-    </head>
-</html>
-```
+To support SSR check [antd-mobile-ssr](https://github.com/cncolder/antd-mobile-ssr)
 
 # Why?
 
 Because `Cannot resolve module 'react-native'`
 
-[antd-mobile](https://github.com/ant-design/ant-design-mobile) is a React Native first library. To use for web. You need import '*.web.js'. Official team tell you can package it by special [webpack config](https://github.com/ant-design/ant-design-mobile/blob/master/docs/react/introduce.md#web-使用方式). But what about SSR(Server Side Render)?
+[antd-mobile](https://github.com/ant-design/ant-design-mobile) is a React Native first library. To use for web. You need import '.web.js'. Official team tell you can package it by special [webpack config](https://github.com/ant-design/ant-design-mobile/blob/master/docs/react/introduce.md#web-使用方式). But in fact it's not easy. Sometime you cannot control your develope env.
 
 # How it work
 
-This repo hold only one script 'build.js'. It copy 'antd-mobile/lib' to root path. Then move all '*.web.js' to '*.js'. Replace all `require` also.
+This repo hold only one script 'build.js'. It copy 'antd-mobile/lib' to root path. Then move '.web.js' to '.js'. Replace `require(.web)`.
 
 Because this package dependencies [antd-mobile](https://github.com/ant-design/ant-design-mobile). So you don't need install it again.
