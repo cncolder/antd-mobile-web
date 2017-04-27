@@ -22,7 +22,7 @@
     "lib"
   ],
   "dependencies": {
-    "antd-mobile": "1.0.0"
+    "antd-mobile": "1.1.0"
   },
   "devDependencies": {
     "fs-extra": "^2.0.0",
