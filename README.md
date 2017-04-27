@@ -1,5 +1,7 @@
 # antd-mobile-web
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/cncolder/antd-mobile-web.svg)](https://greenkeeper.io/)
+
 [antd-mobile](https://github.com/ant-design/ant-design-mobile) web only.
 
 # Install
