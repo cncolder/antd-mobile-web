@@ -1,0 +1,22 @@
+{
+    "presets": [
+        [
+            "env",
+            {
+                "target": {
+                    "node": true
+                }
+            }
+        ],
+        "react"
+    ],
+    "plugins": [
+        [
+            "import",
+            {
+                "libraryName": "../..",
+                "style": true
+            }
+        ]
+    ]
+}

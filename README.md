@@ -1,10 +1,14 @@
-# antd-mobile-web
+# Ant design mobile @1.x web entry
 
-[antd-mobile](https://github.com/ant-design/ant-design-mobile) web only.
+[antd-mobile](https://github.com/ant-design/ant-design-mobile) web only. Don't worry [.web.js](https://github.com/ant-design/ant-design-mobile/issues?utf8=%E2%9C%93&q=is%3Aissue%20.web) suffix issues.
 
-# Install
+`npm i --save-dev antd-mobile-web`
 
-`npm i antd-mobile-web --save-dev`
+Or
+
+`yarn add -D antd-mobile-web`
+
+## Usage
 
 Follow official doc setup `.babelrc`
 
@@ -14,15 +18,14 @@ Follow official doc setup `.babelrc`
         [
             "import",
             {
-                "libraryName": "antd-mobile-web",
-                "style": "css"
+                "libraryName": "antd-mobile-web"
             }
         ]
     ]
 }
 ```
 
-**Dont forget setup `style-loader` and `css-loader` in your webpack config**
+Work in progress: <del>**Dont forget setup `style-loader` and `css-loader` in your webpack config**</del>
 
 Then import components
 
@@ -30,18 +33,16 @@ Then import components
 import { Button } from 'antd-mobile-web'
 ```
 
-# About SSR
-
-To support SSR check [antd-mobile-ssr](https://github.com/cncolder/antd-mobile-ssr)
-
-# Why?
+## Why?
 
 Because `Cannot resolve module 'react-native'`
 
-[antd-mobile](https://github.com/ant-design/ant-design-mobile) is a React Native first library. To use for web. You need import '.web.js'. Official team tell you can package it by special [webpack config](https://github.com/ant-design/ant-design-mobile/blob/master/docs/react/introduce.md#web-使用方式). But in fact it's not easy. Sometime you cannot control your develope env.
+[antd-mobile](https://github.com/ant-design/ant-design-mobile) is a React Native first library. For web. You need import '.web.js'. Official document tell you can package it by special [webpack config](https://github.com/ant-design/ant-design-mobile/blob/master/docs/react/introduce.md#web-使用方式). But in fact it's not easy in test env or editor level.
 
-# How it work
+## How it work
 
-This repo hold only one script 'build.js'. It copy 'antd-mobile/lib' to root path. Then move '.web.js' to '.js'. Replace `require(.web)`.
+Script generate file trees sync 'antd-mobile/lib'. And point to `antd-mobile/lib/comp/index.web`.
 
-Because this package dependencies [antd-mobile](https://github.com/ant-design/ant-design-mobile). So you don't need install it again.
+## Acknowledgements
+
+This project is a shell and base on `antd-mobile`. All real work hard by Ant Design team.

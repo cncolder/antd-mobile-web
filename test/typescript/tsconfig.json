@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "moduleResolution": "node",
+        "jsx": "react",
+        "allowSyntheticDefaultImports": true,
+        "target": "es5",
+        "skipLibCheck": true,
+        "pretty": true,
+        "lib": [
+            "dom",
+            "es6"
+        ]
+    },
+    "compileOnSave": false
+}
