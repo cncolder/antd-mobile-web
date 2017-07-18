@@ -1,1 +1,0 @@
-add npm release script

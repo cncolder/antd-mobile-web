@@ -1,6 +1,6 @@
 {
     "name": "antd-mobile-web",
-    "version": "1.0.0-beta.1",
+    "version": "1.5.0-alpha.1",
     "description": "基于 React 的移动设计规范实现，Web 入口。",
     "homepage": "http://mobile.ant.design",
     "keywords": [
@@ -23,13 +23,19 @@
         "es",
         "lib"
     ],
+    "scripts": {
+        "gen": "node gen.js",
+        "test": "./test/run.sh",
+        "prepublishOnly": "npm run gen && npm run test",
+        "release": "git release `node -e \"console.log('v'+require('./package').version)\"` -c"
+    },
     "dependencies": {
         "babel-plugin-import": "^1.2.1"
     },
     "devDependencies": {
         "@types/node": "^8.0.12",
         "@types/react": "^15.0.38",
-        "antd-mobile": "^1.4.1",
+        "antd-mobile": "^1.5.0-alpha.2",
         "babel-preset-env": "^1.6.0",
         "babel-preset-react": "^6.24.1",
         "babel-register": "^6.24.1",
@@ -39,12 +45,6 @@
         "typescript": "^2.4.1"
     },
     "peerDependencies": {
-        "antd-mobile": "1.x"
-    },
-    "scripts": {
-        "gen": "node gen.js",
-        "test": "./test.sh",
-        "prepublishOnly": "npm run gen",
-        "release": "yarn version --no-git-tag-version && git release `node -e \"console.log('v'+require('./package').version)\"` -c"
+        "antd-mobile": "^1.5.0-alpha"
     }
 }

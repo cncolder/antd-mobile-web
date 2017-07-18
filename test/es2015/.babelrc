@@ -14,8 +14,7 @@
         [
             "import",
             {
-                "libraryName": "../..",
-                "style": true
+                "libraryName": "../.."
             }
         ]
     ]

@@ -1,4 +1,4 @@
-# Ant design mobile @1.x web entry
+# [Experience] - Ant design mobile web entry
 
 [antd-mobile](https://github.com/ant-design/ant-design-mobile) web only. Don't worry [.web.js](https://github.com/ant-design/ant-design-mobile/issues?utf8=%E2%9C%93&q=is%3Aissue%20.web) suffix issues.
 
@@ -42,6 +42,11 @@ Because `Cannot resolve module 'react-native'`
 ## How it work
 
 Script generate file trees sync 'antd-mobile/lib'. And point to `antd-mobile/lib/comp/index.web`.
+
+## TODO
+
+1. es module
+2. style
 
 ## Acknowledgements
 
