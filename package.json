@@ -15,6 +15,7 @@
         "frontend"
     ],
     "main": "lib",
+    "module": "es",
     "typings": "lib/index.d.ts",
     "repository": "https://github.com/cncolder/antd-mobile-web",
     "author": "Colder",
@@ -30,7 +31,10 @@
         "release": "git release `node -e \"console.log('v'+require('./package').version)\"` -c"
     },
     "dependencies": {
-        "babel-plugin-import": "^1.2.1"
+        "babel-plugin-import": "^1.2.1",
+        "babel-preset-es2015": "^6",
+        "babel-preset-react": "^6",
+        "svg-sprite-loader": "^0.3.1"
     },
     "devDependencies": {
         "@types/node": "^8.0.12",
