@@ -10,44 +10,52 @@ Or
 
 ## Usage
 
-Follow official doc setup `.babelrc`
+Setup `.babelrc`
 
 ```json
 {
-    "plugins": [
-        [
-            "import",
-            {
-                "libraryName": "antd-mobile-web"
-            }
-        ]
+    "presets": [
+        "antd-mobile-web/babel"
     ]
+}
+```
+
+Setup `webpack.config.js`
+
+```js
+module.exports = {
+    module: {
+        rules: [
+            amwWebpack.createSvgRule()
+        ]
+    }
 }
 ```
 
 Work in progress: <del>**Dont forget setup `style-loader` and `css-loader` in your webpack config**</del>
 
-Then import components
+Import components
 
 ```js
 import { Button } from 'antd-mobile-web'
 ```
 
+### [Here is a full example](https://github.com/ant-design/antd-mobile-samples/tree/master/antd-mobile-web)
+
 ## Why?
 
 Because `Cannot resolve module 'react-native'`
 
-[antd-mobile](https://github.com/ant-design/ant-design-mobile) is a React Native first library. For web. You need import '.web.js'. Official document tell you can package it by special [webpack config](https://github.com/ant-design/ant-design-mobile/blob/master/docs/react/introduce.md#web-使用方式). But in fact it's not easy in test env or editor level.
+[antd-mobile](https://github.com/ant-design/ant-design-mobile) is a React Native first library. For web. You need import '.web.js'. Official introduce show you how to package by special [webpack config](https://github.com/ant-design/ant-design-mobile/blob/master/docs/react/introduce.md#web-使用方式). But it's not friendly in test env or editor.
 
 ## How it work
 
-Script generate file trees sync 'antd-mobile/lib'. And point to `antd-mobile/lib/comp/index.web`.
+Script generate file trees sync `antd-mobile/lib`. And point to `antd-mobile/lib/${comp}/index.web`.
 
 ## TODO
 
-1. es module
-2. style
+* Support style
 
 ## Acknowledgements
 
-This project is a shell and base on `antd-mobile`. All real work hard by Ant Design team.
+This project is a shell base on `antd-mobile`. Which product by Ant Design team.
