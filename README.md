@@ -50,7 +50,7 @@ Because `Cannot resolve module 'react-native'`
 
 ## How it work
 
-Script generate file trees sync `antd-mobile/lib`. And point to `antd-mobile/lib/${comp}/index.web`.
+Script generate file trees sync from `antd-mobile/lib`. And point to `antd-mobile/lib/${comp}/index.web`.
 
 ## TODO
 
