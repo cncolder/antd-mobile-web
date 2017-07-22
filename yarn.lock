@@ -24,9 +24,9 @@ ansi-styles@^2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/ansi-styles/-/ansi-styles-2.2.1.tgz#b432dd3358b634cf75e1e4664368240533c1ddbe"
 
-antd-mobile@^1.5.0-alpha.2:
-  version "1.5.0-alpha.2"
-  resolved "https://registry.yarnpkg.com/antd-mobile/-/antd-mobile-1.5.0-alpha.2.tgz#c00915970b1ec7f723cfb314f0d9946540720c70"
+antd-mobile@^1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/antd-mobile/-/antd-mobile-1.5.0.tgz#58168e913b77709db1cb14d42065b981472ee181"
   dependencies:
     array-tree-filter "~1.0.0"
     babel-runtime "6.x"
@@ -46,7 +46,7 @@ antd-mobile@^1.5.0-alpha.2:
     rc-steps "~2.5.1"
     rc-swipeout "~1.3.0"
     rc-table "~5.4.0"
-    rc-tabs "~8.0.0"
+    rc-tabs "~8.1.0"
     rc-tooltip "~3.4.3"
     rc-touchable "~1.2.2"
     react-native-camera-roll-picker "~1.1.6"
@@ -1302,9 +1302,9 @@ rc-table@~5.4.0:
     shallowequal "^0.2.2"
     warning "^3.0.0"
 
-rc-tabs@~8.0.0:
-  version "8.0.2"
-  resolved "https://registry.yarnpkg.com/rc-tabs/-/rc-tabs-8.0.2.tgz#05fa4b57252df33851e5c250a08bcc6f8e55ceb4"
+rc-tabs@~8.1.0:
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/rc-tabs/-/rc-tabs-8.1.0.tgz#7d284ec1760692bca7f5994bafd2c6e14208f2eb"
   dependencies:
     babel-runtime "6.x"
     classnames "2.x"
